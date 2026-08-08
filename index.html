@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeZ | Programming Learning Platform</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233d73dd'/%3E%3Ctext x='32' y='39' text-anchor='middle' font-family='Arial' font-size='22' font-weight='700' fill='white'%3ECZ%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="splash" class="splash">
+    <div class="splash-logo">
+      <span class="logo-mark">CZ</span>
+      <span>CodeZ</span>
+    </div>
+    <div class="loader" aria-label="Loading CodeZ"></div>
+  </div>
+
+  <aside id="sidebar" class="sidebar" aria-label="Main navigation">
+    <div class="sidebar-head">
+      <div class="brand mini"><span class="logo-mark">CZ</span><span>CodeZ</span></div>
+      <button class="icon-btn" id="closeSidebar" aria-label="Close menu" title="Close menu">x</button>
+    </div>
+    <nav id="sideNav"></nav>
+  </aside>
+  <div id="overlay" class="overlay"></div>
+
+  <div class="app-shell">
+    <header class="topbar">
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="brand"><span class="logo-mark">CZ</span><span>CodeZ</span></div>
+      <div class="top-stats">
+        <div class="stat-chip"><strong id="xpTop">0</strong><span>XP</span></div>
+        <div class="stat-chip"><strong id="levelTop">1</strong><span>Level</span></div>
+        <div class="stat-chip"><strong id="streakTop">0</strong><span>Streak</span></div>
+      </div>
+      <button class="icon-btn" id="notifyBtn" aria-label="Notifications" title="Notifications">!</button>
+      <button class="avatar-btn" data-view="profile" id="avatarTop" aria-label="Open profile" title="Open profile">A</button>
+    </header>
+
+    <main id="app" class="view"></main>
+  </div>
+
+  <div id="toastHost" class="toast-host" aria-live="polite"></div>
+  <canvas id="confetti" class="confetti"></canvas>
+  <script src="app.js"></script>
+</body>
+</html>
